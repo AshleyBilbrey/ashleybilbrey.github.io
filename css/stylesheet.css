@@ -63,6 +63,7 @@ canvas{
 	animation-name: flip;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
+	z-index: 1;
 }
 
 h1 {
