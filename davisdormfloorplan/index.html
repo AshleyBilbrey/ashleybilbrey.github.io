@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ashley Bilbrey - Davis Dorm Floor Plan Tool</title>
+
+  <meta content="Ashley Bilbrey" property="og:title">
+  <meta content="Davis Dorm Floor Plan Tool" property="og:description">
+  <meta name="theme-color" content="#A723BB">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+<body>
+  <div id="formcapsule">
+    <p>Hello! My name is Ashley. Please use this page to see your UC Davis dorm floor plan. Please share with your friends!</p>
+    <label for="hall">Hall:</label>
+    <select name="hall" id="hall" form="hallform">
+      <optgroup label="Tercero">
+        <option value="campbell">Campbell Hall</option>
+        <option value="cottonwood">Cottonwood Hall</option>
+        <option value="currant">Currant Hall</option>
+        <option value="hawthorn">Hawthorn Hall</option>
+        <option value="kearney">Kearney Hall</option>
+        <option value="laben">Laben Hall</option>
+        <option value="liveoak">Live Oak Hall</option>
+        <option value="madrone">Madrone Hall</option>
+        <option value="mahogany">Mahogany Hall</option>
+        <option value="pine">Pine Hall</option>
+        <option value="potter">Potter Hall</option>
+        <option value="redwood">Redwood Hall</option>
+        <option value="scruboak">Scrub Oak Hall</option>
+        <option value="sequoia">Sequoia Hall</option>
+        <option value="wall">Wall Hall</option>
+      </optgroup>
+      <optgroup label="Segundo">
+        <option value="alder">Alder Hall</option>
+        <option value="bixby">Bixby Hall</option>
+        <option value="gilmore">Gilmore Hall</option>
+        <option value="malcolm">Malcolm Hall</option>
+        <option value="miller">Miller Hall</option>
+        <option value="regan">Regan Hall</option>
+        <option value="ryerson">Ryerson Hall</option>
+        <option value="thompson">Thompson Hall</option>
+      </optgroup>
+    </select>
+
+    <form id="hallform" name="hallform">
+      <label for="floornum">Floor Number:</label>
+      <input type="number" id="floornum" name="floornum" />
+    </form>
+    <button onclick="formSubmit()">See Floor Plan</button>
+
+  </div>
+  <div id="floorplan">
+  </div>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131254827-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131254827-1');
+    </script>
+
+    <script>
+      function formSubmit() {
+        var hall = document.forms["hallform"]["hall"].value;
+        var floor = document.forms["hallform"]["floornum"].value;
+        document.getElementById("formcapsule").style.display = "none";
+        document.getElementById("floorplan").innerHTML = "<img src='https://housing.ucdavis.edu/_images/buildings/floorplans/" + hall + "-" + floor + ".png' style='height: 98vh'>"
+      }
+    </script>
+
+    <style>
+      img {
+        height: 98vh;
+      }
+
+      select {
+        align: center;
+      }
+
+      #formcapsule {
+        margin:auto;
+        width: 50vw;
+        margin-top: 30vh;
+        font-family: "Fira Sans", "Fira", sans-serif;
+        border: 2px dashed;
+        padding: 5vh;
+        border-color: #A723BB;
+      }
+    </style>
+
+</body>
+
+
+
+
+</html>
