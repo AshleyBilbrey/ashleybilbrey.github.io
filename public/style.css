@@ -4,6 +4,7 @@
     --flamingo: #dd7878;
     --pink: #ea76cb;
     --mauve: #8839ef;
+    --mauve-hover: #a87be3;
     --red: #d20f39;
     --maroon: #e64553;
     --peach: #fe640b;
@@ -35,6 +36,7 @@
         --flamingo: #eebebe;
         --pink: #f4b8e4;
         --mauve: #ca9ee6;
+        --mauve-hover: #d9cde1;
         --red: #e78284;
         --maroon: #ea999c;
         --peach: #ef9f76;
@@ -90,8 +92,22 @@ ul {
     margin-left: 1em;
 }
 
+li {
+    margin-bottom: 5px;
+}
+
 a {
     color: var(--mauve);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--mauve-hover)
+}
+
+a:focus {
+    text-decoration: none;
+    color: var(--mauve-hover)
 }
 
 h1, h2, h3, p {
@@ -109,7 +125,7 @@ h1, h2, h3, p {
     font-family: 'Nunito', sans-serif;
 }
 
-.bold {
+.bold, strong {
     font-weight: bold;
 }
 
