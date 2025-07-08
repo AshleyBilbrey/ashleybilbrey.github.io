@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- well hello there -->
+    <title>{% unless page.title == "Ashley Bilbrey" %}{{ page.title }} | {% endunless %}Ashley Bilbrey</title>
+    <link rel='stylesheet' href='/public/css/style.css' type='text/css'>
+    <link rel='stylesheet' href='/public/css/syntax.css' type='text/css'>
+
+    <meta name="viewport" content="width=device-width">
+
+    <meta charset="UTF-8">
+    <meta name="description" property="og:description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ashleybilbrey.com{{ page.id }}" />
+    <meta property="og:site_name" content="Ashley Bilbrey" />
+    {% if page.mainImage %}<meta property="og:image" content="https://www.ashleybilbrey.com{{ page.mainImage }}" />{% endif %}
+    <meta property="og:locale" content="en_US" />
+    <meta name="theme-color" content="#8839ef">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="/public/js/main.js"></script>
+
+</head>
+
+<body class="font-nunito">
+    <header>
+        <a href="/">
+            <div {% if page.title=="Ashley Bilbrey" %}class="selected-header"{% endif %}>Ashley Bilbrey</div>
+        </a>
+        <a href="/posts">
+            <div {% if page.title=="Posts" %}class="selected-header"{% endif %}>Posts</div>
+        </a>
+        <a href="https://github.com/AshleyBilbrey/">
+            <div>GitHub</div>
+        </a>
+        <a href="https://www.linkedin.com/in/ashley-bilbrey/">
+            <div>LinkedIn</div>
+        </a>
+    </header>
+    <main>
+        {% if page.mainImage %}<img src="{{ page.mainImage }}"{% if page.mainImageAlt %} alt="{{ page.mainImageAlt }}"{% endif %}>{% endif %}
+        {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+        {% if page.author %}by {{ page.author }} {% endif %}{% if page.date %}on {{ page.date | date: '%d %B %Y' }}{% endif %} 
+        <hr />

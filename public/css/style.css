@@ -1,0 +1,276 @@
+:root {
+    /** Catpuccin Latte https://github.com/catppuccin/catppuccin **/
+    --rosewater: #dc8a78;
+    --flamingo: #dd7878;
+    --pink: #ea76cb;
+    --mauve: #8839ef;
+    --mauve-hover: #a87be3;
+    --red: #d20f39;
+    --maroon: #e64553;
+    --peach: #fe640b;
+    --yellow: #df8e1d;
+    --green: #40a02b;
+    --teal: #179299;
+    --sky: #04a5e5;
+    --sapphire: #209fb5;
+    --blue: #1e66f5;
+    --lavender: #7287fd;
+    --text: #4c4f69;
+    --subtext1: #5c5f77;
+    --subtext0: #6c6f85;
+    --overlay2: #7c7f93;
+    --overlay1: #8c8fa1;
+    --overlay0: #9ca0b0;
+    --surface2: #acb0be;
+    --surface1: #bcc0cc;
+    --surface0: #ccd0da;
+    --base: #eff1f5;
+    --mantle: #e6e9ef;
+    --crust: #dce0e8;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /** Catpuccin Frappé https://github.com/catppuccin/catppuccin **/
+        --rosewater: #f2d5cf;
+        --flamingo: #eebebe;
+        --pink: #f4b8e4;
+        --mauve: #ca9ee6;
+        --mauve-hover: #d9cde1;
+        --red: #e78284;
+        --maroon: #ea999c;
+        --peach: #ef9f76;
+        --yellow: #e5c890;
+        --green: #a6d189;
+        --teal: #81c8be;
+        --sky: #99d1db;
+        --sapphire: #85c1dc;
+        --blue: #8caaee;
+        --lavender: #babbf1;
+        --text: #c6d0f5;
+        --subtext1: #b5bfe2;
+        --subtext0: #a5adce;
+        --overlay2: #949cbb;
+        --overlay1: #838ba7;
+        --overlay0: #737994;
+        --surface2: #626880;
+        --surface1: #51576d;
+        --surface0: #414559;
+        --base: #303446;
+        --mantle: #292c3c;
+        --crust: #232634;
+    }
+}
+
+
+* {
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/** Elements **/
+body {
+    background-color: var(--base);
+}
+
+main {
+    color: var(--text);
+    max-width: 750px;
+    padding: 25px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 1.2em;
+    background-color: var(--mantle);
+    display: flex;
+    color: white;
+    width: 100%;
+}
+
+header > a {
+    text-decoration: none;
+}
+
+header > a > div {
+    color: var(--text);
+    padding: 0.6em;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > a > div:hover {
+    background-color: var(--crust);
+}
+
+footer {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+footer > p > a {
+    cursor: pointer;
+}
+
+ul {
+    margin-left: 1em;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: var(--mauve);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--mauve-hover)
+}
+
+a:focus {
+    text-decoration: none;
+    color: var(--mauve-hover)
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    font-style: italic;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--text);
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 0.9em;
+    }
+
+    code.language-plaintext.highlighter-rouge {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+ol, ul {
+    margin-left: 1em;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    background: var(--mantle);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--overlay0);
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--crust);
+}
+
+/** Classes **/
+
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.font-nunito {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bold,
+strong {
+    font-weight: bold;
+}
+
+.respectspace {
+    white-space: pre;
+}
+
+.mauve {
+    color: var(--mauve)
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    margin-right: auto;
+}
+
+.selected-header {
+    background-color: var(--crust);
+}
+
+.postcard {
+    margin-top: 1em;
+}
+
+.postcard:hover {
+    margin-top: 1em;
+    opacity: 80%;
+}
+
+.postcardlink {
+    text-decoration: none;
+}
+
+.posttop {
+    height: 10em;
+    background-color: var(--mauve);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.postbottom {
+    background-color: var(--crust);
+    padding: 1em;
+    padding-bottom: 1.5em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    color: var(--text);
+}
+
+.highlighter-rouge {
+    background-color: var(--mantle);
+}
+
+code.language-plaintext.highlighter-rouge {
+    color: var(--green);
+    padding: 0.25em;
+    text-wrap: wrap;
+}
+
+div.highlighter-rouge {
+    background-color: var(--mantle);
+    padding: 1em;
+    margin-top: 1em;
+    width: calc(100% - 2em);
+    overflow: scroll;
+    border-radius: 0.5em;
+}

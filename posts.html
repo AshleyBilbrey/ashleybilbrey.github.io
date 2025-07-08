@@ -1,0 +1,14 @@
+---
+title: Posts
+---
+{% for post in site.posts %}
+<div class="postcard">
+  <a class="postcardlink" href="{{ post.id }}">
+    <div class="posttop" {% if post.mainImage %}style="background-image: url('{{ post.mainImage }}');"{% endif %}></div>
+    <div class="postbottom">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.description }}</p>
+    </div>
+  </a>
+</div>
+{% endfor %}
