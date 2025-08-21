@@ -56,7 +56,7 @@ red box around the 'Create' button.">
         "name": "My Bridge",
         "description": "A bridge between Slack and Discord",
         "background_color": "#8839ef",
-        "long_description": "A friendly bot that echos conversations between Slack workspaces and Discord servers. Based off the guide from https://www.ashleybilbrey.com/2025/07/03/how-to-link-discord-and-slack"
+        "long_description": "A friendly bot that echos conversations between Slack workspaces and Discord servers. Based off the guide from https://www.ashleybilbrey.com/posts/2025/07/03/how-to-link-discord-and-slack"
     },
     "features": {
         "bot_user": {
