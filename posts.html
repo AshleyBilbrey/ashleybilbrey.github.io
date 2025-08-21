@@ -1,9 +1,10 @@
 ---
 title: Posts
+permalink: /posts/
 ---
 {% for post in site.posts %}
 <div class="postcard">
-  <a class="postcardlink" href="{{ post.id }}">
+  <a class="postcardlink" href="{{ post.url }}">
     <div class="posttop" {% if post.mainImage %}style="background-image: url('{{ post.mainImage }}');"{% endif %}></div>
     <div class="postbottom">
       <h2>{{ post.title }}</h2>

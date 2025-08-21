@@ -60,3 +60,9 @@ defaults:
       layout: 'default'
       description: "Ashley Bilbrey is a Security and Software Engineer dedicated to impactful work."
       title: "Ashley Bilbrey"
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      permalink: /posts/:year/:month/:day/:title/
