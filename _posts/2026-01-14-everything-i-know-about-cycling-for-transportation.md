@@ -5,7 +5,7 @@ description: Everything I have learned from my experience cycling to school and 
 mainImage: /public/img/2026/01/14/cycling-for-transportation.png
 mainImageAlt: A teal city bike at night with a red tail light glowing. Text overlaid reading Cycling for Transportation by Ashley Bilbrey.
 ---
-Throughout my life I've mountain biked, road biked, and also cycled for transportation. It's fun, it's good for you, [less dangerous](https://doi.org/10.1289/ehp.0901747) than some might think, and good for the environment. Plus, it's pretty efficient and economical, you can go [miles on a burrito](https://www.heavycivilbigdata.com/miles-per-burrito.html).
+Throughout my life I've mountain biked, road biked, and also cycled for transportation. It's fun, it's good for you, [less dangerous](https://web.archive.org/web/20250320173505/https://ehp.niehs.nih.gov/doi/10.1289/ehp.0901747) than some might think, and good for the environment. Plus, it's pretty efficient and economical, you can go [miles on a burrito](https://www.heavycivilbigdata.com/miles-per-burrito.html).
 
 My goal for this post isn't to try to convince people to cycle for transportation, but I want to share everything I've learned to make cycling easier for others. My target audience is for new or mildly experienced cyclists for transportation in the United States. I'll also have a small focus on Davis, California, where I [went to college](https://cs.ucdavis.edu/news/outstanding-senior-spotlight-ashley-bilbrey) and a place [known for bicycling](https://en.wikipedia.org/wiki/Davis,_California#Bicycling).
 
